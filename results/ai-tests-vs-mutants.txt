@@ -1,0 +1,45 @@
+AI (Google Gemini)-гийн тестийн класс Хэсэг B-гийн мутантуудын эсрэг
+Үүсгэсэн: 2026-11-03 19:36
+Тестийн класс: ai-test/AiCourseRegistrationServiceTest.java (13 тест)
+
+=================== 0-эвдрэлгүй ===================
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+BUILD SUCCESS
+
+=================== 1-active-хассан ===================
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0
+BUILD FAILURE
+	at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnErrorInactiveStudent_whenStudentIsInactive(AiCourseRegistrationServiceTest.java:99)
+  унав: AiCourseRegistrationServiceTest.register_shouldReturnErrorInactiveStudent_whenStudentIsInactive:99 expected: <ERROR_INACTIVE_STUDENT> but was: <ERROR_NO_COURSE>
+  унав: mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnErrorInactiveStudent_whenStudentIsInactive -- Time elapsed: 0.337 s <<< FAILURE!
+
+=================== 2-save-хассан ===================
+Tests run: 13, Failures: 5, Errors: 0, Skipped: 0
+BUILD FAILURE
+	at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldNotSendEmail_whenRegistrationSavingFails(AiCourseRegistrationServiceTest.java:275)
+	at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenAllPrerequisitesAreCompleted(AiCourseRegistrationServiceTest.java:168)
+	at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenCourseHasNoPrerequisites(AiCourseRegistrationServiceTest.java:188)
+	at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenEmailSendingFails(AiCourseRegistrationServiceTest.java:255)
+	at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenStudentMeetsAllRequirements(AiCourseRegistrationServiceTest.java:60)
+  унав: AiCourseRegistrationServiceTest.register_shouldNotSendEmail_whenRegistrationSavingFails:275 Expected java.lang.RuntimeException to be thrown, but nothing was thrown.
+  унав: AiCourseRegistrationServiceTest.register_shouldReturnOK_whenAllPrerequisitesAreCompleted:168 
+  унав: AiCourseRegistrationServiceTest.register_shouldReturnOK_whenCourseHasNoPrerequisites:188 
+  унав: AiCourseRegistrationServiceTest.register_shouldReturnOK_whenEmailSendingFails:255 
+  унав: AiCourseRegistrationServiceTest.register_shouldReturnOK_whenStudentMeetsAllRequirements:60 
+  унав: mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldNotSendEmail_whenRegistrationSavingFails -- Time elapsed: 0.004 s <<< FAILURE!
+  унав: mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenAllPrerequisitesAreCompleted -- Time elapsed: 0.001 s <<< FAILURE!
+  унав: mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenCourseHasNoPrerequisites -- Time elapsed: 0.001 s <<< FAILURE!
+  унав: mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenEmailSendingFails -- Time elapsed: 0.001 s <<< FAILURE!
+  унав: mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenStudentMeetsAllRequirements -- Time elapsed: 0.006 s <<< FAILURE!
+-> at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenAllPrerequisitesAreCompleted(AiCourseRegistrationServiceTest.java:168)
+-> at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenCourseHasNoPrerequisites(AiCourseRegistrationServiceTest.java:188)
+-> at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenEmailSendingFails(AiCourseRegistrationServiceTest.java:255)
+-> at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldReturnOK_whenStudentMeetsAllRequirements(AiCourseRegistrationServiceTest.java:60)
+
+=================== 3-courseId-null-хассан ===================
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0
+BUILD FAILURE
+	at mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldThrowException_whenCourseIdIsNull(AiCourseRegistrationServiceTest.java:215)
+  унав: AiCourseRegistrationServiceTest.register_shouldThrowException_whenCourseIdIsNull:215 Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+  унав: mn.edu.must.sqat.AiCourseRegistrationServiceTest.register_shouldThrowException_whenCourseIdIsNull -- Time elapsed: 0.003 s <<< FAILURE!
+
